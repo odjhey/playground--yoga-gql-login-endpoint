@@ -1,0 +1,27 @@
+{
+  "name": "playground--yoga-gql-login-endpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "odjhey <odjhey@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"nodemon src/server.ts\" \"yarn generate --watch\"",
+    "generate": "graphql-codegen"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^9.0.4",
+    "@graphql-yoga/node": "^2.13.13",
+    "fastify": "^4.6.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.12.0",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.3",
+    "@types/node": "^18.7.18",
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
